@@ -1,0 +1,69 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.65\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "80ae4270e83637715442",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2483d3825925d992020a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":816.0738095602998,\"y\":36.40944688807492,\"z\":2,\"width\":426.8693773084645,\"height\":279.97609158761054}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"mvps_cplp.Genero\",\"active\":true}],\"Y\":[{\"queryRef\":\"mvps_cplp.Contagem de MVPs\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"mvps_cplp\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Genero\"},\"Name\":\"mvps_cplp.Genero\",\"NativeReferenceName\":\"Genero\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Contagem de MVPs\"},\"Name\":\"mvps_cplp.Contagem de MVPs\",\"NativeReferenceName\":\"Contagem de MVPs\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Contagem de MVPs\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 279.98,
+          "width": 426.87,
+          "x": 816.07,
+          "y": 36.41,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"7ab034d7285d90cbd96c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":74.07439194470413,\"y\":192.09121978880904,\"z\":1,\"width\":426.8693773084645,\"height\":490.8997839047342,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"mvps_cplp.Categoria\",\"active\":true}],\"Y\":[{\"queryRef\":\"mvps_cplp.Contagem de MVPs\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"mvps_cplp\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Categoria\"},\"Name\":\"mvps_cplp.Categoria\",\"NativeReferenceName\":\"Categoria\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Contagem de MVPs\"},\"Name\":\"mvps_cplp.Contagem de MVPs\",\"NativeReferenceName\":\"Contagem de MVPs\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Contagem de MVPs\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 490.90,
+          "width": 426.87,
+          "x": 74.07,
+          "y": 192.09,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"e172968de079646c4a1b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":592.5951355576331,\"y\":337.7290073411087,\"z\":3,\"width\":650.3480513111313,\"height\":362.83897071219485}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"mvps_cplp.Contagem de MVPs\"}],\"Category\":[{\"queryRef\":\"mvps_cplp.Pais\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"mvps_cplp\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Contagem de MVPs\"},\"Name\":\"mvps_cplp.Contagem de MVPs\",\"NativeReferenceName\":\"Contagem de MVPs\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Pais\"},\"Name\":\"mvps_cplp.Pais\",\"NativeReferenceName\":\"Pais\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Contagem de MVPs\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 362.84,
+          "width": 650.35,
+          "x": 592.60,
+          "y": 337.73,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"fd54081a44e960ce5806\",\"layouts\":[{\"id\":0,\"position\":{\"x\":74.07439194470413,\"y\":36.40944688807492,\"z\":0,\"width\":426.8693773084645,\"height\":121.78332234976781}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"mvps_cplp.Contagem de MVPs\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"mvps_cplp\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Contagem de MVPs\"},\"Name\":\"mvps_cplp.Contagem de MVPs\",\"NativeReferenceName\":\"Contagem de MVPs\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Contagem de MVPs\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 121.78,
+          "width": 426.87,
+          "x": 74.07,
+          "y": 36.41,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

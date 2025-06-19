@@ -1,0 +1,63 @@
+table mvps_cplp
+	lineageTag: 9ce43e04-543c-4748-b596-6e5a518f0592
+	sourceLineageTag: [dbo].[mvps_cplp]
+
+	measure 'Contagem de MVPs' = ```
+			DISTINCTCOUNT(mvps_cplp[Nome]) 
+			```
+		formatString: #,0
+		lineageTag: 96ea038a-609c-4991-81a4-4a2899072a7a
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+	column Nome
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5a0a91d3-d0c2-45fd-a559-7040cfb1bfed
+		sourceLineageTag: Nome
+		summarizeBy: none
+		sourceColumn: Nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column Genero
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0a6c9799-98ed-473e-9a0b-ccbed52c5341
+		sourceLineageTag: Genero
+		summarizeBy: none
+		sourceColumn: Genero
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pais
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: de7a090f-bcc3-48da-abdb-4467b064c796
+		sourceLineageTag: Pais
+		summarizeBy: none
+		sourceColumn: Pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categoria
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 08a89daa-d0aa-4f42-8835-9441f08c56f7
+		sourceLineageTag: Categoria
+		summarizeBy: none
+		sourceColumn: Categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	partition mvps_cplp = entity
+		mode: directLake
+		source
+			entityName: mvps_cplp
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
